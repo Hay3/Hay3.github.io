@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
-body {
-    align-content:center
+.tableDiv {
+    margin-left: 0 auto;
 }
 
 .artistTable p {
