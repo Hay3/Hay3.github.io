@@ -9,12 +9,10 @@
     <ul id="list">
 
     </ul>
-    <table class="artistTable">
-    </table>
-
+    
     <script>
         let node = document.createElement("LI");
-        let text = document.createElement("Have fun");
+        let text = document.createTextNode("Have fun");
         node.appendChild(text);
         document.getElementById("list").appendChild(node);
         
