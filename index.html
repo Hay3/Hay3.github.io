@@ -30,13 +30,13 @@
             src = src.concat('/' + id.toString() + '.jpg');
 
             name.innerHTML = names[0];
-            caption = captions[0];
+            caption.innerHTML = captions[0];
 
             img.src = src;
 
             node.appendChild(img);
-            node.appendChild(name);
-            node.appendChild(caption);
+            node.append(name);
+            node.append(caption);
 
             document.getElementById("list").appendChild(node);
         }
