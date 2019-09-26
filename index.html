@@ -3,6 +3,7 @@
 <head>
     <title>Hyeok Hayden Hur home page</title>
     <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -25,7 +26,6 @@
             const sexID = Math.floor(Math.random() * 2) < 1 ? "men" : "women";
             let src = 'https://randomuser.me/api/portraits/med';
 
-
             src = src.concat('/' + sexID.toString());
             src = src.concat('/' + id.toString() + '.jpg');
 
@@ -35,11 +35,13 @@
             img.src = src;
 
             let tc1 = document.createElement("TC");
+            tc1.appendChild(img);
+
             let br = document.createElement("BR");
 
+            name.className = "desc";
             br.className = "desc";
-
-            tc1.appendChild(img);
+            caption.className = "desc";
 
             node.appendChild(tc1);
             node.append(name);
