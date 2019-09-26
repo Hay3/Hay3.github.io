@@ -10,6 +10,7 @@ function loadArtistInfo() {
         const sexID = Math.floor(Math.random() * 2) <= 1 ? "men" : "women";
 
         img.src = 'https://randomuser.me/api/portraits/med/${sexID}/${id}.jpg';
+        console.log(img.src);
 
         trNode.appendChild(img);
         table.append(img);
