@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+body {
+    text-align: center;
+}
+
+.tableDiv {
+    display: inline-block;
+}
 
 .artistTable p {
-    font-family: 'Nunito', Arial;
+
     display: inline;
-    text-align: right;
+    text-align: center;
 }
