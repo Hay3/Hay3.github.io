@@ -7,15 +7,24 @@
 
 <body>
     <ul id="list">
-
     </ul>
-    
+
     <script>
-        let node = document.createElement("LI");
-        let text = document.createTextNode("Have fun");
-        node.appendChild(text);
-        document.getElementById("list").appendChild(node);
-        
+
+        var i;
+        for (i = 0; i < 5; ++i) {
+            let node = document.createElement("LI");
+            let img = document.createElement("IMG");
+
+            const id = Math.floor(Math.random() * 100);
+            const sexID = Math.floor(Math.random() * 2) <= 1 ? "men" : "women";
+
+            img.src = 'https://randomuser.me/api/portraits/med/${sexID}/${id}.jpg';
+
+            node.appendChild(img);
+            document.getElementById("list").appendChild(node);
+        }
+
     </script>
 </body>
 
