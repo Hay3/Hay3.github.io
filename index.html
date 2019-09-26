@@ -6,15 +6,14 @@
 </head>
 
 <body>
-    <table class="artistTable">
+    <table id="ab" class="artistTable">
     </table>
 
     <script>
-        var table = document.getElementsByTagName('table');
-        var tr = document.createElement('tr');
-        tr.innerHTML = "Hello";
+        var table = document.getElementById("ab");
+        console.log(table);
 
-        table.appendChild(tr);
+        
     </script>
 </body>
 
