@@ -21,9 +21,9 @@
             let src = 'https://randomuser.me/api/portraits/med';
 
             src.concat('/');
-            src.concat(String(id));
+            src.concat(id.toString());
             src.concat('/');
-            src.concat(String(sexID));
+            src.concat(sexID.toString());
             
             img.src = src;
             console.log(src);
