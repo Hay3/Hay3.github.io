@@ -1,4 +1,10 @@
+@font-face {
+    font-family: Nunito;
+    src: url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+}
+
 .desc {
+    font-family: Nunito;
     display: inline;
     align-content: center;
     text-align: right;
