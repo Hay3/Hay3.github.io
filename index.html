@@ -34,21 +34,20 @@
 
             img.src = src;
 
-            let tc = document.createElement("TC");
+            let tc1 = document.createElement("TC");
+            let tc2 = document.createElement("TC");
             let tr1 = document.createElement("TR");
             let tr2 = document.createElement("TR");
-
-            tc.className = "caption";
 
             tr1.appendChild(name);
             tr2.appendChild(caption);
 
-            tc.appendChild(tr1);
-            tc.append(tr2);
+            tc1.appendChild(img);
+            tc2.appendChild(tr1);
+            tc2.append(tr2);
 
-            node.appendChild(img);
-            node.append(tr1);
-            node.append(tr2);
+            node.appendChild(tc1);
+            node.append(tc2);
 
             document.getElementById("list").appendChild(node);
         }
