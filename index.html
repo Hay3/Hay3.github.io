@@ -34,9 +34,15 @@
 
             img.src = src;
 
+            let tr1 = document.createElement("TR");
+            let tr2 = document.createElement("TR");
+
+            tr1.appendChild(name);
+            tr2.appendChild(caption);
+
             node.appendChild(img);
-            node.append(document.createElement("TR").appendChild(name));
-            node.append(document.createElement("TR").appendChild(caption));
+            node.append(tr1);
+            node.append(tr2);
 
             document.getElementById("list").appendChild(node);
         }
