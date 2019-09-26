@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 .artistTable {
-    font-family: 'Nunito';
+    font-family: 'Nunito', Arial;
+}
+
+.artistTable p {
+    display: inline;
+    text-align: right;
 }
