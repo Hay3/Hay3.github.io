@@ -34,14 +34,17 @@
 
             img.src = src;
 
+            let tc = document.createElement("TC");
             let tr1 = document.createElement("TR");
             let tr2 = document.createElement("TR");
 
-            tr1.className = "caption";
-            tr2.className = "caption";
+            tc.className = "caption";
 
             tr1.appendChild(name);
             tr2.appendChild(caption);
+
+            tc.appendChild(tr1);
+            tc.append(tr2);
 
             node.appendChild(img);
             node.append(tr1);
