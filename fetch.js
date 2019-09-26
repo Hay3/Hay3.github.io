@@ -11,6 +11,7 @@ function loadArtistInfo() {
 
         img.src = 'https://randomuser.me/api/portraits/med/${sexID}/${id}.jpg';
         console.log(img.src);
+        console.log(1);
 
         trNode.appendChild(img);
         table.append(img);
