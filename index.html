@@ -35,19 +35,16 @@
             img.src = src;
 
             let tc1 = document.createElement("TC");
-            let tc2 = document.createElement("TC");
-            let tr1 = document.createElement("TR");
-            let tr2 = document.createElement("TR");
+            let br = document.createElement("BR");
 
-            tr1.appendChild(name);
-            tr2.appendChild(caption);
+            br.className = "desc";
 
             tc1.appendChild(img);
-            tc2.appendChild(tr1);
-            tc2.append(tr2);
 
             node.appendChild(tc1);
-            node.append(tc2);
+            node.append(name);
+            node.append(br);
+            node.append(caption);
 
             document.getElementById("list").appendChild(node);
         }
