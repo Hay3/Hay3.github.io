@@ -1,7 +1,8 @@
 function loadArtistInfo() {
     var table = document.getElementByClassName("artistTable");
 
-    for (let i = 0; i < 5; ++i) {
+    var i;
+    for (i = 0; i < 5; ++i) {
         let trNode = document.createElement("tr");
         let img = document.createElement("img");
 
