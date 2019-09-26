@@ -6,13 +6,15 @@
 </head>
 
 <body>
-    <p id="demo"></p>
     <table class="artistTable">
-        Font test
     </table>
 
     <script>
-        document.getElementById("demo").innerHTML = "Hello World!";
+        var table = document.getElementsByTagName("table");
+        var tr = document.createElement("tr");
+        tr.innerHTML = "Hello";
+
+        table.appendChild(tr);
     </script>
 </body>
 
