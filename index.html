@@ -11,11 +11,15 @@
 
     <script>
 
+        var names = { "Barot Bellingham", "Jonathan G.Ferrar", "Hillary Hewitt Goldwynn-Post", "Hassum Harrod", "Jeniffer Jerome"};
+        var captions = { "Royal Academy of Painting and Sculpture", "Artist to Watch in 2012", "New York University", "Art College in New Dehli", "BCIT"};
+
         var i;
         for (i = 0; i < 5; ++i) {
             let node = document.createElement("TR");
             let img = document.createElement("IMG");
             let name = document.createElement("P");
+            let caption = document.createElement("P");
 
             const id = Math.floor(Math.random() * 100);
             const sexID = Math.floor(Math.random() * 2) < 1 ? "men" : "women";
@@ -25,12 +29,14 @@
             src = src.concat('/' + sexID.toString());
             src = src.concat('/' + id.toString() + '.jpg');
 
-            name.innerHTML = "Hayden Hur";
+            name.innerHTML = names[0];
+            caption = captions[0];
+
             img.src = src;
-            
+
             node.appendChild(img);
             node.appendChild(name);
-            node.appendChild(name);
+            node.appendChild(caption);
 
             document.getElementById("list").appendChild(node);
         }
