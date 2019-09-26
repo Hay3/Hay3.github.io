@@ -11,8 +11,9 @@
     </table>
 
     <script>
-        var table = document.getElementByClassName("artistTable");
-
+        var table = document.getElementsByTagName("table");
+        table.append('111111111111');
+        
         var i;
         for (i = 0; i < 5; ++i) {
             let trNode = document.createElement("tr");
@@ -27,7 +28,6 @@
             trNode.appendChild(img);
             table.append(img);
         }
-
     </script>
 </body>
 
