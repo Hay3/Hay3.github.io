@@ -19,11 +19,11 @@
             const id = Math.floor(Math.random() * 100);
             const sexID = Math.floor(Math.random() * 2) < 1 ? "men" : "women";
             let src = 'https://randomuser.me/api/portraits/med';
+ 
+            src = '/' + src.concat(id.toString());
+            src = '/' + src.concat(sexID.toString());
 
-            const str_id = id.toString(); 
-            src = src.concat(str_id);
-            
-            //img.src = src;
+            img.src = src;
             console.log(src);
 
             node.appendChild(img);
