@@ -4,8 +4,11 @@ body {
     margin: 0 auto;
 }
 
-.artistTable p {
-    font-family: 'Nunito';
+.caption {
     display: inline;
     text-align: right;
+}
+
+.artistTable p {
+    font-family: 'Nunito';
 }
